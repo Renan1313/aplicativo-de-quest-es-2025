@@ -63,3 +63,105 @@ button:hover {
     font-size: 20px;
     margin: 5px 0;
 }
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f9;
+    color: #333;
+    text-align: center;
+}
+
+#app {
+    margin-top: 50px;
+}
+
+button {
+    padding: 10px 20px;
+    margin: 10px;
+    font-size: 18px;
+    cursor: pointer;
+    border: none;
+    border-radius: 5px;
+    background-color: #4CAF50;
+    color: white;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #45a049;
+}
+
+#quiz {
+    margin-top: 20px;
+}
+
+#alternativas {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+#alternativas button {
+    background-color: #f9c74f;
+    color: white;
+    font-weight: bold;
+    padding: 15px;
+    border-radius: 10px;
+    transition: background-color 0.3s ease;
+}
+
+#alternativas button:hover {
+    background-color: #f6a828;
+}
+
+#feedback {
+    margin-top: 20px;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+#feedback.correct {
+    color: green;
+}
+
+#feedback.incorrect {
+    color: red;
+}
+
+#ranking {
+    margin-top: 30px;
+}
+
+#ranking ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+#ranking li {
+    font-size: 20px;
+    margin: 5px 0;
+}
+
+#proxima {
+    background-color: #2196F3;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 5px;
+    font-size: 18px;
+    border: none;
+    cursor: pointer;
+}
+
+#proxima:hover {
+    background-color: #0b7dda;
+}
+
+#inicio {
+    font-size: 20px;
+    color: #333;
+}
