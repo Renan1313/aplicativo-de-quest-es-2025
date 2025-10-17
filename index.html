@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quiz de Português e Matemática</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div id="app">
+        <div id="inicio">
+            <h1>Bem-vindo ao Quiz!</h1>
+            <p>Digite seu nome para iniciar o jogo:</p>
+            <input type="text" id="nome" placeholder="Seu nome">
+            <button id="comecar" onclick="iniciarQuiz()">Iniciar</button>
+        </div>
+
+        <div id="quiz" style="display:none;">
+            <div id="questao">
+                <p id="pergunta"></p>
+                <div id="alternativas">
+                    <button class="alternativa" onclick="verificarResposta(0)">Alternativa 1</button>
+                    <button class="alternativa" onclick="verificarResposta(1)">Alternativa 2</button>
+                    <button class="alternativa" onclick="verificarResposta(2)">Alternativa 3</button>
+                    <button class="alternativa" onclick="verificarResposta(3)">Alternativa 4</button>
+                </div>
+            </div>
+            <div id="feedback" style="display:none;"></div>
+            <button id="proxima" onclick="proximaQuestao()" style="display:none;">Próxima</button>
+        </div>
+
+        <div id="ranking" style="display:none;">
+            <h2>Ranking</h2>
+            <ul id="ranking-list"></ul>
+        </div>
+    </div>
+    <audio id="bgMusic" loop>
+        <source src="music.mp3" type="audio/mp3">
+    </audio>
+    <script src="script.js"></script>
+</body>
+</html>
